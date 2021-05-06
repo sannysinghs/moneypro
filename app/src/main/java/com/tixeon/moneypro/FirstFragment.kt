@@ -6,6 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import com.tixeon.moneypro.databinding.FragmentFirstBinding
 
 /**
@@ -25,6 +29,18 @@ class FirstFragment : Fragment() {
     ): View? {
 
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
+
+        FirebaseDatabase.getInstance().getReference("/").addValueEventListener(object: ValueEventListener {
+            override fun onDataChange(p0: DataSnapshot) {
+//                binding.textviewFirst.text = p0.get
+            }
+
+            override fun onCancelled(p0: DatabaseError) {
+                binding.textviewFirst.text = p0.message
+                println(p0.toException())
+            }
+        })
+
         return binding.root
 
     }
