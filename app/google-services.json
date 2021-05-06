@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "534572968854",
+    "firebase_url": "https://moneypro-26344-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "moneypro-26344",
+    "storage_bucket": "moneypro-26344.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534572968854:android:1a169227edbddbddd6cbb7",
+        "android_client_info": {
+          "package_name": "com.tixeon.moneypro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534572968854-c7foohheulhoncav097c6k5sgeh5sbe3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTjZQ9pn9gGtjQIGnb5Kwjh5QYbHGg-l4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534572968854-c7foohheulhoncav097c6k5sgeh5sbe3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

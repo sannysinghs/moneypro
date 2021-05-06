@@ -1,0 +1,2 @@
+rootProject.name = "MoneyPro"
+include ':app'
